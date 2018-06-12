@@ -1,12 +1,9 @@
-package learn.spring.aop;
+package top.yuyufeng.learn.spring.aop;
 
-import learn.service.HelloService;
+import top.yuyufeng.learn.spring.service.HelloService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -15,8 +12,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @date 2017/11/14
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/spring-service.xml"})
-public class Demo1 {
+@ContextConfiguration({"classpath:spring/spring-aop.xml"})
+public class Demo1TestAop {
     @Autowired
     private HelloService helloService;
 

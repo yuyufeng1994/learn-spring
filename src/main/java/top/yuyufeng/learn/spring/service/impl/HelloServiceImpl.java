@@ -1,9 +1,6 @@
-package learn.service.impl;
+package top.yuyufeng.learn.spring.service.impl;
 
-import learn.annotation.LogAnnotation;
-import learn.service.HelloService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import top.yuyufeng.learn.spring.service.HelloService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +12,5 @@ public class HelloServiceImpl implements HelloService {
     @Override
     public void hello(String words) {
         System.out.println(words);
-        int i = 1 / 0;
     }
 }

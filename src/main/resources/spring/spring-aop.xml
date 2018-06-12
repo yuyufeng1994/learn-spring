@@ -10,13 +10,13 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="learn.service.impl"/>
+    <context:component-scan base-package="top.yuyufeng.learn.spring"/>
 
 
 
 
 
-    <bean id="logInterceptor" class="learn.interceptor.LogInterceptor"></bean>
+    <bean id="logInterceptor" class="top.yuyufeng.learn.spring.interceptor.LogInterceptor"></bean>
 
     <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
         <property name="beanNames">
@@ -33,7 +33,7 @@
 
 <!--
     <aop:aspectj-autoproxy/>
-    <bean id="logAspect" class="learn.aspect.LogAspect"></bean>-->
+    <bean id="logAspect" class="LogAspect"></bean>-->
 
 
 </beans>

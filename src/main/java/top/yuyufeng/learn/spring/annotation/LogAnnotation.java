@@ -1,4 +1,4 @@
-package learn.annotation;
+package top.yuyufeng.learn.spring.annotation;
 
 import java.lang.annotation.*;
 

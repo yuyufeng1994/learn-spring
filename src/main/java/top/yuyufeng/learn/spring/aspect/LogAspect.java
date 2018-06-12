@@ -1,4 +1,4 @@
-package learn.aspect;
+package top.yuyufeng.learn.spring.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
