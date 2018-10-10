@@ -17,7 +17,7 @@
 
     <context:component-scan base-package="top.yuyufeng.learn.spring.postprocessor"/>
 
-    <bean id="person1" class="top.yuyufeng.learn.spring.bean.Person">
+    <bean id="person1" class="top.yuyufeng.learn.spring.bean.Person" init-method="myInitMethod" >
         <constructor-arg index="0" value="小鱼"/>
         <constructor-arg index="1" value="25"/>
     </bean>

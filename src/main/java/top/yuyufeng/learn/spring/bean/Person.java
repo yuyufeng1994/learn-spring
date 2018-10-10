@@ -1,10 +1,12 @@
 package top.yuyufeng.learn.spring.bean;
 
+import org.springframework.beans.factory.InitializingBean;
+
 /**
  * @author yuyufeng
  * @date 2018/10/10.
  */
-public class Person {
+public class Person implements InitializingBean {
     private String name;
     private int age;
 
@@ -35,5 +37,14 @@ public class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("Person.afterPropertiesSet");
+    }
+
+    public void myInitMethod() {
+        System.out.println("Person.initMethod");
     }
 }
